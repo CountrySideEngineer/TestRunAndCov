@@ -29,7 +29,7 @@ def LoadTargets(targetXmlFile):
     for unittest in unittests:
         target = Target()
         target.name = unittest.attrib["name"]
-        target.testType = unittest.attrib["type"]
+        target.testType = unittest.attrib["ext"]
         target.path = unittest.attrib["path"]
         targets.append(target)
 
