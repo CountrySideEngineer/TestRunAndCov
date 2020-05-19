@@ -90,9 +90,12 @@ def CreateIndexHtml(summaries):
     html_data += '<div class="container"><div class="containerleft">\n'
     html_data += '<h1>テスト結果(概要)</h1>\n'
     html_data += '<table class="overview">\n'
-    html_data += '<tr><th>テスト名</th><th>結果</th><th>合計</th><th>実行</th><th>成功</th><th>失敗</th></tr>\n'
+    html_data += '<tr><th>No.</th><th>テスト名</th><th>結果</th><th>合計</th><th>実行</th><th>成功</th><th>失敗</th></tr>\n'
+    data_index = 0
     for summary in summaries:
+        data_index += 1
         html_data += '<tr>\n'
+        html_data += '<td class="right column30">' + str(data_index)  + '</td>\n'
         html_data += '<td class="left"><a href="./summary/' + summary.name + '/index.html">' + summary.name + '</a></td>\n'
         if summary.name == "Passed":
             outcome_classname = "resutl_passed"
@@ -168,9 +171,12 @@ def CreateResultHtml(results):
     html_data += '<div class="container"><div class="containerleft">\n'
     html_data += '<h1>テスト結果(内訳)</h1>\n'
     html_data += '<table class="overview">\n'
-    html_data += '<tr><th>テスト名</th><th>結果</th><th>実行日時</th>\n'
+    html_data += '<tr><th>No.</th><th>テスト名</th><th>結果</th><th>実行日時</th>\n'
+    data_index = 0
     for result in results:
+        data_index += 1
         html_data += '<tr>\n'
+        html_data += '<td class="right column30">' + str(data_index) + '</td>\n'
         html_data += '<td class="left columnAuto">' + result.testname + '</td>\n'
         if result.outcome == "Passed":
             html_data += '<td class="resutl_passed center column60">OK</td>\n'

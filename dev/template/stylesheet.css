@@ -35,6 +35,9 @@ td { text-align: center;}
 .center { text-align: center;}
 .right { text-align: right; }
 
+.column20 { width: 20px; }
+.column30 { width: 30px; }
+.column40 { width: 40px; }
 .column60 { width: 60px; }
 .column80 { width: 80px; }
 .column100 { width: 100px; }
