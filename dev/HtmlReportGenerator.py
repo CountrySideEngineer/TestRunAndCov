@@ -90,17 +90,18 @@ def CreateIndexHtml(summaries):
     html_data += '<div class="container"><div class="containerleft">\n'
     html_data += '<h1>テスト結果(概要)</h1>\n'
     html_data += '<table class="overview">\n'
-    html_data += '<tr><th>No.</th><th>テスト名</th><th>結果</th><th>合計</th><th>実行</th><th>成功</th><th>失敗</th></tr>\n'
+    html_data += '<tr><th>No.</th><th>テスト名</th><th>カバレッジ</th><th>結果</th><th>合計</th><th>実行</th><th>成功</th><th>失敗</th></tr>\n'
     data_index = 0
     for summary in summaries:
         data_index += 1
         html_data += '<tr>\n'
         html_data += '<td class="right column30">' + str(data_index)  + '</td>\n'
         html_data += '<td class="left"><a href="./summary/' + summary.name + '/index.html">' + summary.name + '</a></td>\n'
-        if summary.name == "Passed":
-            outcome_classname = "resutl_passed"
-        else:
+        html_data += '<td class="center column80"><a href="./coverage/' + summary.name + '/index.htm">Coverage</a></td>\n'
+        if summary.outcome == "Failed":
             outcome_classname = "resutl_failed"
+        else:
+            outcome_classname = "resutl_passed"
         html_data += '<td class="center column60 ' + outcome_classname + '">' + summary.outcome + '</td>\n'
         html_data += '<td class="right column60">' + summary.total + '</td>\n'
         html_data += '<td class="right column60">' + summary.executed + '</td>\n'
