@@ -1,0 +1,47 @@
+﻿html { 
+    font-family: sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    font-size: 0.9em; 
+    background-color: #FFFFFF; 
+    height: 100%; }
+body { margin: 0; padding: 0; height: 100%; width: 100%; }
+h1 { 
+    text-align: left;
+    font-size: 1.2em;
+    font-family: 'ＭＳ ゴシック', sans-serif; 
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #6f6f6f; 
+    padding: 10px 30px 10px 30px;
+    margin: 20px -20px 20px -20px;
+}
+h1:first-of-type { margin-top: 0; }
+h2 { font-size: 1.0em; font-weight: bold; margin: 10px 0 15px 0; padding: 0; }
+h3 { font-size: 1.0em; font-weight: bold; margin: 0 0 10px 0; padding: 0; display: inline-block; }
+
+.overview { border: solid 1px #c1c1c1; border-collapse: collapse; width: 100%; word-wrap: break-word; }
+.container { margin: auto; max-width: 1500px; width: 80%; background-color: #fff; display: flex;}
+.containerleft { padding: 0 20px 20px 20px; flex: 1; }
+
+table th { border: solid 2px; padding: 3px; font-size: 12px; background-color: lightblue; text-align: center;}
+table td { border: solid 2px; padding: 3px; font-size: 12px; }
+th { background-color: lightblue; }
+td { text-align: center;}
+.resutl_passed { background-color: lightgreen;}
+.resutl_failed { background-color: red; color:white; font-weight: bold; border-color: black;}
+
+.left { text-align: left; }
+.center { text-align: center;}
+.right { text-align: right; }
+
+.column20 { width: 20px; }
+.column30 { width: 30px; }
+.column40 { width: 40px; }
+.column60 { width: 60px; }
+.column80 { width: 80px; }
+.column100 { width: 100px; }
+.column120 { width: 120px; }
+.column140 { width: 140px; }
+.column160 { width: 160px; }
+.columnAuto { width: auto; }

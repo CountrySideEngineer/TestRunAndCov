@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UnitTestAutoRunConfig>
+    <Tools>
+        <UnitTest>
+            <Runner
+                name="test.runner.exe"
+                path="C:\Path\to\test\runner\"
+            />
+            <Coverage
+                name="coverage.tool.exe"
+                path="C:\Path\to\coverage\tool\directory\"
+            />
+            <ReportGenerator
+                name="report.generator.exe"
+                path="C:\Path\to\report\generate\tool\directory\"
+            />
+        </UnitTest>
+    </Tools>
+    <UserConfig>
+        <TestTarget Path=".//Targets.xml" />
+    </UserConfig>
+</UnitTestAutoRunConfig>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Targets>
+    <UnitTest name="target_bin_name" ext="extention_of_bin" path="C:\path\to\target\directory\"/>
+</Targets>
